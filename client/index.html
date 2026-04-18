@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ask Any GitHub Repo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>🧑‍💻 Ask Any GitHub Repo</h1>
+      <p>Paste a public GitHub repo URL and ask a question. Get an AI answer based on the code.</p>
+    </div>
+
+    <div class="form-group">
+      <input id="repo" placeholder="https://github.com/owner/repository" />
+      <input id="question" placeholder="What does this repository do? / Where is the main logic?" />
+    </div>
+
+    <div class="actions">
+      <button onclick="ask()" class="primary-btn">Ask Question</button>
+      <button onclick="explain()" class="secondary-btn">Explain this repo instead</button>
+    </div>
+
+    <div class="output-container">
+      <pre id="output">Waiting for your question...</pre>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
